@@ -1,0 +1,17 @@
+messages:
+  usage: '&6Usage: &a/rcon <server>/<all> <command>'
+  reload: '&aRconSync reloaded'
+  noPermission: '&cNo permission to command'
+  unknownCommand: '&cUnknown command: {command}'
+  serverNotExist: '&6{server} &adoes not exist. Check the config.yml file'
+  noRconCommand:  '&cEnter the command. &6Usage: &a/rcon <server>/<all> <command>'
+  rconResponse: '&6{server}: &a{reply}'
+
+
+servers:
+  # Rcon Servers Settings
+  Lobby:
+    ip: "172.18.0.1"
+    port: "25564"
+    pass: "13215648856132"
+    perms: "rcon.lobby"

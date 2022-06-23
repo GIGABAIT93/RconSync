@@ -1,0 +1,9 @@
+name: RconSync
+version: '${project.version}'
+main: com.vertisanpro.rconsync.RconSync
+api-version: 1.19
+authors: [ GIGABAIT ]
+description: Synchronize commands using Rcon
+website: https://vertisanpro.com
+commands:
+  rcon: {}
