@@ -39,6 +39,7 @@ public class RconCommand extends AbstractCommand {
             config = RconSync.getInstance().getConfig();
             serversData = config.getConfigurationSection("servers");
             servers = getServers();
+            Message.load(config);
             Message.reload.send(sender);
             return;
         }
