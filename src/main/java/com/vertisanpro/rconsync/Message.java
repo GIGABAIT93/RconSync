@@ -54,8 +54,8 @@ public enum Message {
         }
 
         private void sendMessage(CommandSender player, String message) {
-            if (message.startsWith("json:")) {
-                player.sendMessage(String.valueOf(new TextComponent(ComponentSerializer.parse(message.substring(5)))));
+            if(message.startsWith("json:")) {
+                player.spigot().sendMessage(new TextComponent(ComponentSerializer.parse(message.substring(5))));
             } else {
                 player.sendMessage(message);
             }
