@@ -6,6 +6,7 @@ messages:
   serverNotExist: '&6{server} &adoes not exist. Check the config.yml file'
   noRconCommand:  '&cEnter the command. &6Usage: &a/rcon <server>/<all> <command>'
   rconResponse: '&6{server}: &a{reply}'
+  list: 'json: ["",{"text":"{server}: ","color":"dark_aqua"},{"text":"TPS,","color":"green","clickEvent":{"action":"run_command","value":"rcon {server} tps"}},{"text":" ","color":"green"},{"text":"LIST","color":"green","clickEvent":{"action":"run_command","value":"rcon {server} list"}},{"text":", ","color":"green"},{"text":"STOP","color":"green","clickEvent":{"action":"run_command","value":"rcon {server} stop"}},{"text":", ","color":"green"},{"text":"RESTART","color":"green","clickEvent":{"action":"run_command","value":"rcon {server} restart"}},{"text":".","color":"green"}]'
 
 
 servers:

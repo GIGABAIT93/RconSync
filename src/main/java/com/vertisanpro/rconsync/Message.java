@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public enum Message {
-    noPermission, usage, reload, unknownCommand, noRconCommand, serverNotExist, rconResponse;
+    noPermission, usage, reload, unknownCommand, noRconCommand, serverNotExist, rconResponse, list;
 
 
     private List<String> msg;

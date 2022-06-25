@@ -44,6 +44,17 @@ public class RconCommand extends AbstractCommand {
             return;
         }
 
+        if (args[0].equalsIgnoreCase("list")) {
+            if (sender.hasPermission("rcon.list")) {
+                for (Object serv : servers) {
+                    Message.list.replace("{server}", serv.toString()).send(sender);
+                }
+                return;
+            }
+            Message.noPermission.send(sender);
+            return;
+        }
+
 
         if (args.length > 1) {
             String  command = String.join(" ", Arrays.asList(args).subList(1, args.length).toArray(new String[]{}));
@@ -108,7 +119,7 @@ public class RconCommand extends AbstractCommand {
     @Override
     public List<String> complete(CommandSender sender, String @NotNull [] args) {
         if (args.length == 1) {
-            ArrayList<String> resp = Lists.newArrayList("reload", "all");
+            ArrayList<String> resp = Lists.newArrayList("reload", "all", "list");
             for (Object serv : this.getServers()) {
                 resp.add(serv.toString());
             }
